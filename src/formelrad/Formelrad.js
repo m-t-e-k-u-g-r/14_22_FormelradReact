@@ -91,8 +91,8 @@ export default function Formelrad() {
                     <InputField color={colors.r} value={values.r} label="Widerstand" handleChange={e => {setValues(values => ({...values, r: e.target.value}))}} />
                     <InputField color={colors.p} value={values.p} label="Leistung" handleChange={e => {setValues(values => ({...values, p: e.target.value}))}} />
                     <button type="submit">Calculate</button>
-                    <p>{values.message}</p>
                     <button style={{margin:10}} onClick={handleClear}>Clear</button>
+                    <p style={{ color: colors.message }}>{values.message}</p>
                 </form>
             </section>
         </>
